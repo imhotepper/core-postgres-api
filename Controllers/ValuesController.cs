@@ -22,7 +22,7 @@ namespace core_pg.Controllers
         {
                 var pgConn = Environment.GetEnvironmentVariable("DATABASE_URL");
                 if (id == 999) return pgConn;
-                if (id == 888) return HerokuPGParser.ConnectionHelper.BuildExpectedConnectionString(pgConn);
+               if (id == 888) return HerokuPGParser.ConnectionHelper.BuildExpectedConnectionString(pgConn);
 
             return "value";
         }
